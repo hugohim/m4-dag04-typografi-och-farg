@@ -2,81 +2,143 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222222;
-  background-color: #fffaf3;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #fffaf3;
+    font-family: Georgia;
+    font-size: 1rem; /* rem utgår från användarens teckenstorlek (default 16) så större text ökar lika stort för alla. */
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+h2 {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
 }
 
 header {
-  background-color: #5b3a29;
-  color: #ffffff;
-  padding: 16px 24px;
+    background-color: #5b3a29;
+    color: #ffffff;
+    padding: 16px 24px;
 }
 
 header h1 {
-  margin: 0 0 8px;
+    margin: 0 0 8px;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 main {
-  padding: 24px;
-  max-width: 1100px;
-  margin: 0 auto;
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 section {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 article {
-  background-color: #ffffff;
-  border: 1px solid #e3d5c3;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e3d5c3;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
 }
 
 article img,
 #om-oss img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 .knapp {
-  display: inline-block;
-  background-color: #8c1010;
-  color: #ffffff;
-  padding: 12px 20px;
-  border: 0;
-  border-radius: 6px;
-  text-decoration: none;
+    display: inline-block;
+    background-color: #8c1010;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
 footer {
-  background-color: #2b1c14;
-  color: #ffffff;
-  padding: 24px;
+    background-color: #2b1c14;
+    color: #ffffff;
+    padding: 24px;
 }
 
 footer a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
+
+#hero {
+    font-size: 1.125;
+    line-height: 1.6;
+    background-color: #f3e3cf;
+    padding: 1.125rem
+
+}
+p {
+    font-family: system-ui, Segoe UI, Roboto, sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: #8c1010;
+
+}
+a:hover {
+    color: #1a73e8;
+}
+.pris {
+     color: #8c1010;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid #1a73e8;
+    outline-offset: 2px;
+}
+
+input, select {
+    padding: 8px;
+    font: inherit;
+    outline: 2px solid
+}
+label {
+    font-weight: 700;
+}
+
+/* Vit text mot röda knappen: 9.55 contrast ration
+Body text 15.31 contrast ration
+Länktext i header 10.08 contrast, hover: 1.05
+
+
+*/
